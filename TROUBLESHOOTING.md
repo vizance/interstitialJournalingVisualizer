@@ -6,7 +6,7 @@
 
 ### 1. 確認使用本地服務器
 
-由於應用使用了 ES6 模組，**必須**通過 HTTP 服務器運行，不能直接雙擊打開 HTML 文件。
+由於應用使用了 ES6 模組，**必須** 通過 HTTP 服務器運行，不能直接雙擊打開 HTML 文件。
 
 **啟動本地服務器：**
 
@@ -26,13 +26,13 @@ php -S localhost:8000
 
 ### 2. 檢查瀏覽器控制台
 
-1. 打開瀏覽器開發者工具（F12 或 Cmd+Option+I）
+1. 打開瀏覽器開發者工具（ F12 或 Cmd+Option+I）
 2. 切換到 **Console** 標籤
 3. 查看是否有錯誤訊息
 
 **正常情況下應該看到：**
 ```
-Waiting for libraries to load... (可能出現)
+Waiting for libraries to load... ( 可能出現 )
 Updating dashboard with X entries
 Category stats: {...}
 Immersion distribution: {...}
@@ -57,7 +57,7 @@ has been blocked by CORS policy
 ReferenceError: Chart is not defined
 ```
 
-**原因**：Chart.js 未加載完成就嘗試創建圖表
+**原因**： Chart.js 未加載完成就嘗試創建圖表
 **解決**：已修復，應用會自動等待庫加載完成
 
 #### 錯誤 C: Canvas 元素找不到
@@ -65,18 +65,18 @@ ReferenceError: Chart is not defined
 Canvas element "immersionChart" not found
 ```
 
-**原因**：DOM 未完全加載
+**原因**： DOM 未完全加載
 **解決**：確保在 `DOMContentLoaded` 後才調用分析
 
 ### 4. 測試步驟
 
 1. **清除瀏覽器緩存**
-   - Chrome: Cmd+Shift+Delete（Mac）或 Ctrl+Shift+Delete（Windows）
+   - Chrome: Cmd+Shift+Delete（ Mac）或 Ctrl+Shift+Delete（ Windows）
    - 選擇「快取的圖片和文件」
    - 點擊「清除資料」
 
 2. **重新加載頁面**
-   - 使用硬刷新：Cmd+Shift+R（Mac）或 Ctrl+Shift+R（Windows）
+   - 使用硬刷新： Cmd+Shift+R（ Mac）或 Ctrl+Shift+R（ Windows）
 
 3. **填入範例資料**
    - 點擊「填入範例資料」按鈕
@@ -133,7 +133,7 @@ ls -la js/
 
 ### 8. 網絡問題
 
-如果圖表庫無法加載（CDN 問題）：
+如果圖表庫無法加載（ CDN 問題）：
 
 1. 檢查網絡連接
 2. 查看 Network 標籤是否有失敗的請求
@@ -186,5 +186,5 @@ curl -O https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartj
 
 ---
 
-**最後更新**: 2024-12-03
+**最後更新**: 2025-12-03
 **版本**: v1.0

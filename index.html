@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>日誌視覺化工具</title>
+    <title> 日誌視覺化工具 </title>
 
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
@@ -406,7 +406,7 @@
                             type="password"
                             id="apiKey"
                             class="input"
-                            placeholder="貼上您的 API Key..."
+                            placeholder=" 貼上您的 API Key..."
                         >
                         <button onclick="saveApiKey()" class="btn btn-primary btn-sm">
                             <i data-lucide="save" style="width: 16px; height: 16px;"></i>
@@ -424,8 +424,8 @@
             <section class="section-lg">
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-title">貼上您的日誌</h2>
-                        <p class="card-subtitle">格式：- 09:00 ~ 10:00 工作事項 ❚❚❚❚</p>
+                        <h2 class="card-title"> 貼上您的日誌 </h2>
+                        <p class="card-subtitle"> 格式：- 09:00 ~ 10:00 工作事項 ❚❚❚❚ </p>
                     </div>
 
                     <textarea
@@ -454,7 +454,7 @@
                             <i data-lucide="zap" style="width: 20px; height: 20px;"></i>
                         </span>
                         <span id="loader" class="loader" style="display: none;"></span>
-                        <span id="btnText">開始分析</span>
+                        <span id="btnText"> 開始分析 </span>
                     </button>
                 </div>
             </section>
@@ -482,14 +482,14 @@
                         <h2 style="font-size: var(--font-size-4xl); font-weight: 900; margin: 0 0 var(--space-2); color: var(--color-black);">
                             日誌深度分析
                         </h2>
-                        <p id="reportDate" style="color: var(--color-gray-500); margin: 0;">分析日期：--</p>
+                        <p id="reportDate" style="color: var(--color-gray-500); margin: 0;"> 分析日期：--</p>
                     </div>
 
                     <!-- Line Chart -->
                     <div class="chart-container">
                         <div class="chart-header">
                             <i data-lucide="trending-up" style="width: 24px; height: 24px;"></i>
-                            <h3 class="chart-title">沉浸度心流趨勢</h3>
+                            <h3 class="chart-title"> 沉浸度心流趨勢 </h3>
                         </div>
                         <div class="chart-wrapper">
                             <canvas id="immersionChart"></canvas>
@@ -504,7 +504,7 @@
                             <div>
                                 <div class="chart-header">
                                     <i data-lucide="layers" style="width: 20px; height: 20px;"></i>
-                                    <h3 style="font-size: var(--font-size-xl); font-weight: 700; margin: 0;">沉浸度分佈</h3>
+                                    <h3 style="font-size: var(--font-size-xl); font-weight: 700; margin: 0;"> 沉浸度分佈 </h3>
                                 </div>
                                 <div class="chart-wrapper">
                                     <canvas id="immersionDistChart"></canvas>
@@ -514,7 +514,7 @@
                             <div>
                                 <div class="chart-header">
                                     <i data-lucide="pie-chart" style="width: 20px; height: 20px;"></i>
-                                    <h3 style="font-size: var(--font-size-xl); font-weight: 700; margin: 0;">任務類別佔比</h3>
+                                    <h3 style="font-size: var(--font-size-xl); font-weight: 700; margin: 0;"> 任務類別佔比 </h3>
                                 </div>
                                 <div class="chart-wrapper">
                                     <canvas id="categoryChart"></canvas>
@@ -526,7 +526,7 @@
                         <div style="background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-lg); border: 1px solid var(--color-gray-200);">
                             <div class="chart-header">
                                 <i data-lucide="award" style="width: 20px; height: 20px; color: var(--color-warning);"></i>
-                                <h3 style="font-size: var(--font-size-xl); font-weight: 700; margin: 0;">高價值投入分析</h3>
+                                <h3 style="font-size: var(--font-size-xl); font-weight: 700; margin: 0;"> 高價值投入分析 </h3>
                             </div>
                             <ul id="immersionAnalysisList" class="analysis-list"></ul>
                         </div>
@@ -537,7 +537,7 @@
                         <div class="card">
                             <div class="chart-header">
                                 <i data-lucide="activity" style="width: 20px; height: 20px;"></i>
-                                <h3 style="font-size: var(--font-size-xl); font-weight: 700; margin: 0;">能量轉折點</h3>
+                                <h3 style="font-size: var(--font-size-xl); font-weight: 700; margin: 0;"> 能量轉折點 </h3>
                             </div>
                             <ul id="trendAnalysisList" class="analysis-list"></ul>
                         </div>
@@ -545,7 +545,7 @@
                         <div class="card" style="background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);">
                             <div class="chart-header">
                                 <i data-lucide="sparkles" style="width: 20px; height: 20px; color: var(--color-black);"></i>
-                                <h3 style="font-size: var(--font-size-xl); font-weight: 700; margin: 0; color: var(--color-black);">AI 能量教練</h3>
+                                <h3 style="font-size: var(--font-size-xl); font-weight: 700; margin: 0; color: var(--color-black);">AI 能量教練 </h3>
                             </div>
                             <div id="aiLessonsContent" style="color: var(--color-black); line-height: 1.7;"></div>
                         </div>
@@ -553,7 +553,7 @@
 
                     <!-- Stats & Kanban -->
                     <div class="card">
-                        <h3 style="font-size: var(--font-size-2xl); font-weight: 700; margin: 0 0 var(--space-6);">統計摘要</h3>
+                        <h3 style="font-size: var(--font-size-2xl); font-weight: 700; margin: 0 0 var(--space-6);"> 統計摘要 </h3>
                         <div id="statsSummary" class="stats-container"></div>
 
                         <details open style="margin-top: var(--space-8);">
@@ -575,7 +575,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2024 CHI CHU. All rights reserved. • v1.0</p>
+            <p> © 2025 CHI CHU. All rights reserved. • v1.0</p>
         </div>
     </footer>
 
