@@ -1,25 +1,21 @@
 # 日誌視覺化工具 v1
 
-## 🎉 重構完成
-
-這是一個經過全面重構的每日日誌視覺化工具，遵循 Clean Code 原則，提供更好的可維護性和可擴展性。
-
-## 📁 項目結構
+## 📁 專案結構
 
 ```
 instertialJournalingVisualizer/
-├── index.html              # 主 HTML 文件（簡化版，無內聯代碼）
+├── index.html              # 主 HTML 檔案（簡化版，無內嵌程式碼）
 ├── css/
 │   └── styles.css         # 所有自定義樣式
 ├── js/
 │   ├── constants.js       # 常數配置（魔法數字、字串、配置）
 │   ├── parser.js          # 日誌解析邏輯
-│   ├── api.js            # API 調用（ Gemini AI）
+│   ├── api.js            # API 呼叫（ Gemini AI）
 │   ├── charts.js         # 圖表渲染邏輯（ Chart.js）
-│   ├── analyzer.js       # 數據分析邏輯
+│   ├── analyzer.js       # 資料分析邏輯
 │   ├── ui.js             # UI 更新和交互
-│   └── main.js           # 主應用程序（協調所有模組）
-└── README.md             # 本文件
+│   └── main.js           # 主應用程式（協調所有模組）
+└── README.md             # 本檔案
 ```
 
 ## 🔧 主要改進
@@ -29,11 +25,11 @@ instertialJournalingVisualizer/
 - ✅ **ES6 模組**：使用 `import/export` 進行模組化
 - ✅ **依賴注入**：減少模組間的耦合
 
-### 2. 代碼質量
+### 2. 程式碼品質
 - ✅ **移除魔法數字**：所有常數集中在 `constants.js`
 - ✅ **函數拆分**：長函數拆分為小型、可測試的函數
 - ✅ **命名改善**：使用描述性的變數和函數名稱
-- ✅ **註釋完整**：每個函數都有 JSDoc 註釋
+- ✅ **註解完整**：每個函數都有 JSDoc 註解
 
 ### 3. 安全性
 - ✅ **移除硬編碼 API Key**：不再暴露敏感信息
@@ -41,7 +37,7 @@ instertialJournalingVisualizer/
 
 ### 4. 可維護性
 - ✅ **單一職責原則（SRP）**：每個模組只做一件事
-- ✅ **DRY 原則**：消除重複代碼
+- ✅ **DRY 原則**：消除重複程式碼
 - ✅ **易於測試**：模組化設計便於單元測試
 
 ## 📦 模組說明
@@ -62,7 +58,7 @@ instertialJournalingVisualizer/
 - 自動補充睡眠時段
 
 ### `api.js`
-管理 API 調用：
+管理 API 呼叫：
 - API Key 管理（儲存 / 載入 / 清除）
 - Gemini AI 分類
 - AI 建議生成
@@ -76,7 +72,7 @@ instertialJournalingVisualizer/
 - Chart.js 配置管理
 
 ### `analyzer.js`
-數據分析：
+資料分析：
 - 類別統計計算
 - 沉浸度分析
 - 能量轉折點識別
@@ -94,14 +90,14 @@ UI 管理：
 應用協調：
 - 初始化應用
 - 協調各模組
-- 處理用戶操作
+- 處理使用者操作
 - 管理應用狀態
 
 ## 🚀 使用方式
 
 1. **開啟 `index.html`**
    - 可以直接在瀏覽器中打開
-   - 或使用本地服務器（推薦）
+   - 或使用本地伺服器（推薦）
 
 2. **輸入 API Key**（可選）
    - 填入 Google Gemini API Key
@@ -118,7 +114,7 @@ UI 管理：
 
 ## 🧪 本地開發
 
-由於使用了 ES6 模組，需要通過 HTTP 服務器運行：
+由於使用了 ES6 模組，需要通過 HTTP 伺服器運行：
 
 ```bash
 # 使用 Python
@@ -131,17 +127,17 @@ npx http-server
 # http://localhost:8000
 ```
 
-## 📊 代碼統計
+## 📊 程式碼統計
 
 ### 重構前
-- **1 個文件**： index.html（ 377 行）
-- **內聯代碼**：~200 行 JavaScript
+- **1 個檔案**： index.html（ 377 行）
+- **內嵌程式碼**：~200 行 JavaScript
 - **可維護性**： ❌ 低
 
 ### 重構後
-- **9 個文件**：模組化結構
-- **代碼行數**：
-  - index.html: 269 行（ ✅ -108 行，移除所有內聯代碼）
+- **9 個檔案**：模組化結構
+- **程式碼行數**：
+  - index.html: 269 行（ ✅ -108 行，移除所有內嵌程式碼）
   - constants.js: 134 行
   - parser.js: 164 行
   - api.js: 234 行
@@ -180,13 +176,13 @@ npx http-server
    - Jest 或 Vitest
    - 測試覆蓋率 > 80%
 
-3. **構建工具**
+3. **建置工具**
    - Vite 或 Webpack
-   - 代碼壓縮和優化
+   - 程式碼壓縮和優化
 
 4. **前端框架**（可選）
    - React / Vue / Svelte
-   - 組件化開發
+   - 元件化開發
 
 ## 📄 授權
 
